@@ -1,0 +1,38 @@
+{
+  "name": "h1bhub",
+  "version": "0.0.1",
+  "description": "## Dependancies",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/jasoki/h1bhub.git"
+  },
+  "author": "Jason Kim",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://gitlab.com/jasoki/h1bhub/issues"
+  },
+  "homepage": "https://gitlab.com/jasoki/h1bhub#README",
+  "dependencies": {
+    "excel-date-to-js": "^1.0.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.2",
+    "sequelize-cli": "^5.4.0",
+    "xlsx": "^0.14.1",
+    "xlsx-stream-reader": "^1.0.9"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "firstline": "^2.0.2",
+    "mocha": "^5.2.0"
+  }
+}

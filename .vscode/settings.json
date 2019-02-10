@@ -1,0 +1,8 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.rulers": [80]
+}
