@@ -24,6 +24,8 @@ This takes around 10 to 20 minutes.
 
 #### Convert all years from 2014 to 2018.
 
+This takes anywhere from half an hour to an hour.
+
 `$ node scripts/convert-all-xlsx-json.js`
 
 #### Convert a specific year
@@ -56,6 +58,8 @@ We have to prepare the tables in postgresql.
 
 #### Load intermediary data
 
+This takes around 10 minutes.
+
 ```
 cat data/h1b-2014.json | PGPASSWORD=password psql -h localhost -p 5434 -U postgres test_h1bhub_pg -c "COPY temp_table_2014s (data) FROM STDIN;"
 cat data/h1b-2015.json | PGPASSWORD=password psql -h localhost -p 5434 -U postgres test_h1bhub_pg -c "COPY temp_table_2015s (data) FROM STDIN;"
@@ -66,7 +70,17 @@ cat data/h1b-2018.json | PGPASSWORD=password psql -h localhost -p 5434 -U postgr
 
 #### Load final data
 
-Run sqls found under `server/db/sql`.
+Run sqls found under [`server/db/sql`](https://github.com/serv/h1bhub/tree/master/server/db/sql).
+
+The connection info for the Docker Postgresql is the following.
+
+```
+Host: localhost
+Port: 5434
+Database: test_h1bhub_pg
+User: postgres
+Password: password
+```
 
 #### Read data
 
