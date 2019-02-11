@@ -1,3 +1,5 @@
+truncate h1b2017s;
+
 insert into h1b2017s (
 id, case_number, case_status, case_submitted, decision_date,
 visa_class, employment_start_date, employment_end_date, employer_name,

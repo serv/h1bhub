@@ -1,3 +1,5 @@
+truncate h1b2015s;
+
 insert into h1b2015s (id, case_number, case_status, case_submitted,
 decision_date, visa_class, employment_start_date, employment_end_date,
 employer_name, employer_address1, employer_address2, employer_city,

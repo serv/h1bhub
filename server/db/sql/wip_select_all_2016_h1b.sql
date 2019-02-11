@@ -1,3 +1,5 @@
+truncate h1b2016s;
+
 insert into h1b2016s (id, case_number, case_status, case_submitted,
 decision_date, visa_class, employment_start_date, employment_end_date,
 employer_name,  employer_address, employer_city, employer_state,
@@ -49,5 +51,5 @@ data->>'worksite_city' AS worksite_city,
 data->>'worksite_county' AS worksite_county,
 data->>'worksite_state' AS worksite_state,
 data->>'worksite_postal_code' AS worksite_postal_code,
-(data->>'original_cert_date')::timestamp AT time zone 'UTC' AS original_cert_date
+NULLIF(data->>'original_cert_date', '')::timestamp AT time zone 'UTC' AS original_cert_date
 FROM temp_table_2016s;

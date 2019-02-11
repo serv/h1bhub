@@ -1,3 +1,5 @@
+truncate h1b2018s;
+
 insert into h1b2018s (
  id,
  case_number,
